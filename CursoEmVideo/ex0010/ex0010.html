@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Vizualizar uma imagem em diferentes dispositivos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduiz audio</h1>
+    <p>Cuida escutar um rock!!! &#x1F525</p>
+    <audio preload="metadata" controls>
+        <source src="midia/musictreyxavier.mp3" type="audio/mpeg">
+        <source src="midia/musictreyxavier.ogg" type="audio/ogg">
+        <source src="midia/musictreyxavier.wav" type="audio/wav">
+    </audio>
+    <p>Se o audio não estiver funcionando, infelizmente o seu navegador não deve ter suporte para esse formato de audio!!!&#x1F622 <br> Porém, você pode baixar o aúdio em formato MP3 logo abaixo &#x1F60A<a href="midia/musictreyxavier.mp3"><h3>Clique aqui para baixar o arquivo MP3</h3></a></p>
+
+    <!--Outra maneira  <audio src="midia/musictreyxavier.mp3" controls></audio> -->
+    <!--MP3 WAV OGG-->
+</body>
+</html>
