@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.973);
+    margin: 0px;
+    padding: 0px;
+  
+}
+header > h1{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #5e00739a, rgb(14, 13, 13));
+    padding: 10px;
+    margin: 0px;
+    
+}
+
+main{
+    background-image: url('Imagens/O-principefundo.avif');
+    min-width: 300px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+picture{
+    padding:0px;
+    margin: 0px;
+}
+
+picture > img{
+    max-width: 400px;
+    height: auto;
+    
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    display: block;
+}
+article{
+    background-color: white;
+    margin: 10px 10px 0px 5px;
+    padding-top: 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 5px 10px 10px black;
+}
+
+article > h2{
+    color: black;
+     padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+article > p{
+    color: black;
+    margin: 0px 100px 5px 100px;
+    padding: auto;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.envolvidos{
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.753);
+}
+
+abbr{
+    text-decoration: none;
+}
+
+.envolvidos:hover{
+    color: blue;
+    font-size: 18px;
+}
+
+main > section{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding: 40px;
+
+}
