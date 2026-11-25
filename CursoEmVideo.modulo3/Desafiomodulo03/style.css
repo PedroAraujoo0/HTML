@@ -49,7 +49,7 @@ picture{
 }
 
 picture#mudar{
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
     
     margin: 10px;
@@ -73,7 +73,7 @@ picture#mudar:hover img{
 }
 
 
-article#art01{
+article.cartao01{
     background-color: white;
     margin: 10px 10px 0px 5px;
     padding-top: 0px;
@@ -82,7 +82,7 @@ article#art01{
     box-shadow: 5px 10px 10px black;
 }
 
-article#art01 > h2{
+article.cartao01 > h2{
     font-weight: 400;
     font-size: 35px;
     color: black;
@@ -91,7 +91,7 @@ article#art01 > h2{
     font-family: 'H2ft', sans-serif;
     
 }
-article#art01 > p{
+article.cartao01 > p{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 540;
     color: black;
@@ -125,6 +125,32 @@ section#sec01{
     padding: 40px;
 
 }
+section#sec01 #girar01 {
+    position: relative;
+    width: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    display: grid; 
+    transition-delay: 1.0s;
+}
+section#sec01:hover #girar01 {
+    transform: rotateY(180deg);
+}
+
+section#sec01 .cartao01 {
+    grid-area: 1 / 1; /* Sobrepõe frente e verso sem achatar a caixa */
+    backface-visibility: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Garante que o h2 fique acima do p */
+    align-items: center;
+    justify-content: center;
+}
+
+section#sec01 #verso01 {
+    transform: rotateY(180deg);
+}
+
 
 section#sec02 {
     color: black;
@@ -146,7 +172,7 @@ section#sec02 {
 section#sec02 #girar {
     position: relative;
     width: 100%;
-    transition: transform 1.0s;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
     display: grid; 
 }
