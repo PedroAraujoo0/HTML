@@ -158,7 +158,7 @@ section#sec02 {
     border-radius: 6px;
     border: 1px solid black;
     padding: 20px;
-    margin: 5px 20px 0px 20px;
+    margin: 40px 20px 0px 20px;
     box-shadow: 5px 10px 10px black;
     display: flex;
     align-items: center;
@@ -215,4 +215,121 @@ article.cartao p {
     line-height: 30px;
     text-align: left;
     text-indent: 30px;
+}
+
+#h03{
+    font-family: 'H2ft', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+#colunas{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+#colunas article{
+    flex: 1;
+}
+
+#sec03{
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 70px 20px 0px 20px;
+    box-shadow: 5px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+article.parte3 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 530;
+    max-width: 700px;
+    margin: auto;
+    padding: 6px 6px 15px 6px;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 30px;
+    
+    
+}
+
+
+#sec04{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+article#girar07{
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    margin-top: 30px
+}
+
+#carton{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#girar07:hover #carton{
+    transform: rotateY(180deg);
+}
+
+#p008, #verso002{
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#p008 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#verso002{
+    background-color:rgb(0, 0, 0);
+    color: rgb(182, 132, 26);
+transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+div#verso002 p{
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 3px 1px 1px rgb(182, 132, 26);
+    font-size: 30px;
+    font-weight: 530;
+    max-width: 700px;
+    margin: auto;
+    padding: 6px 6px 15px 6px;
 }
